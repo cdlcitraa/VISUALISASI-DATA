@@ -2,9 +2,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 alpha = np.radians(45)
-g = 9.8
-v0 = 1.4*(10**(-3))
-x0,y0 = 0,0
+g = 9.8                   #Percepatan Gravitasi, m/s^2
+v0 = 1.4*(10**(-3))       #Kecepatan awal benda, m/s
+x0,y0 = 0,0               #Posisi awal benda
 
 v0x = v0*np.cos(alpha)
 v0y = v0*np.sin(alpha)
@@ -23,6 +23,6 @@ x = v0x*t
 
 fig, ax = plt.subplots()
 ax.plot(x, y)
-ax.set(xlabel='x (m)', ylabel= 'y (m)' , title='Grafik Gerak Parabola')
+ax.set(xlabel='Jarak (m)', ylabel= 'Ketinggian (m)' , title='Grafik Gerak Parabola')
 ax.grid()
 plt.show()
